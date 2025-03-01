@@ -16,7 +16,7 @@
     </style>
 </head>
 <body class="bg-[#F4F7FF] poppins-thin">
-    <nav class="md:container mx-auto flex justify-between bg-[#FFFFFF] py-[18px] px-6 items-center rounded-[16px] mt-4">
+    <nav class="md:container shadow-md mx-auto flex justify-between bg-[#FFFFFF] py-[18px] px-6 items-center rounded-[16px] mt-4">
         <div class="flex gap-2">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-[35px]">Dev<span class="font-bold">Board</span></h1>
@@ -33,8 +33,174 @@
             </button>
         </div>
     </nav>
-
-
+    <!--main section-->
+    <section class="md:container mx-auto flex gap-6 mt-5 mb-14 bg-[#F4F7FF]">
+        <!--left content-->
+        <div class="w-3/4 bg-[#FFFFFF] py-6 rounded-[16px] shadow-md">
+            <div class="grid grid-cols-4 gap-6 mx-6">
+                <div class="flex bg-[#F4F7FF] gap-5 pt-8 pl-8 pr-5 pb-6 rounded-[16px]">
+                    <div class="bg-[#FFFFFF] w-[64px] h-[64px] rounded-[50%] p-[18px]">
+                        <img class="w-[28px] h-[28px]" src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div class="class">
+                        <span class="text-[16px] font-medium">Task Assigned</span>
+                        <p class="font-bold text-[32px]">05</p>
+                    </div>
+                </div>
+                <!--second-->
+                <div class="bg-gradient-to-r from-[#3752FD] vai-[#6C7FFA] to-[#9BA8F8] col-span-2 rounded-[16px] pt-5 pb-6 pl-10">
+                 <div class="flex gap-5">
+                    <img src="./assets/board.png" alt="">
+                    <h3 class="text-[24px] font-medium text-[#FFFFFF]">Discover Something <br>New Today!</h3>
+                 </div>
+                </div>
+                <!--three-->
+                <div class="flex bg-[#F4F7FF] gap-5 pt-8 pl-8 pr-5 pb-6 rounded-[16px]">
+                    <div class="bg-[#FFFFFF] w-[64px] h-[64px] rounded-[50%] p-[18px]">
+                        <img class="w-[28px] h-[28px]" src="./assets/calender.png" alt="">
+                    </div>
+                    <div class="class">
+                        <span class="text-[16px] font-medium">Wed ,</span>
+                        <p class="font-bold text-[17px]">Jul 28 2025</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed  my-8">
+            <div class="grid grid-cols-3 gap-9 mx-4">
+                <!--card1-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[114px]">
+                            <h6 class="text-[16px] font-normal">ShopEase</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Fix Mobile Button Issue </h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Debug using Chrome<br>DevTools, check for overlapp,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card2-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[114px]">
+                            <h6 class="text-[16px] font-normal">CloudSync</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Add Dark Mode</h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Store the user's preference in localStorage, update CSS vari,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card3-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[114px]">
+                            <h6 class="text-[16px] font-normal">SwiftPay</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Optimize  Home page </h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Debug using Chrome DevTools, check for overlappi,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card4-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[114px]">
+                            <h6 class="text-[16px] font-normal">Meta</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Add new emoji 🤲</h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Debug using Chrome<br>DevTools, check for overlapp,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card5-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[125px]">
+                            <h6 class="text-[16px] font-normal">Google LLC</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Integrate OpenAI API </h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Debug using Chrome<br>DevTools, check for overlapp,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!--card6-->
+                <div class="px-6 pt-6 pb-5 bg-[#F4F7FF] rounded-[16px]">
+                    <div class="class">
+                        <div class="px-4 py-2 bg-[#FFFFFF] rounded-[8px] w-[114px]">
+                            <h6 class="text-[16px] font-normal">Glassdoar</h6>
+                        </div>
+                        <h2 class="text-[24px] font-medium my-4">Improve Job searching </h2>
+                        <div class="bg-[#FFFFFF] p-2 rounded-[8px]">
+                            <p class="text-[16px] mb-4 mt-1 ml-2">Debug using Chrome<br>DevTools, check for overlapp,,,</p>
+                        </div>
+                        <hr class="border-dashed mt-4 mb-5">
+                        <div class="flex justify-between">
+                            <div class="class">
+                                <h5 class="text-[14px]">Deadline</h5>
+                                <h2 class="text-[16px]">21 March 2025</h2>
+                            </div>
+                            <button class="text-[#FFFFFF] font-medium text-[16px] py-[10px] px-5 bg-[#3752FD] rounded-[8px]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--right content-->
+        <div class="w-1/4 bg-[#FFFFFF] rounded-[16px] shadow-md">
+            <div class="text-center">
+                <div class="flex justify-center gap-4 mt-6">
+                    <img src="./assets/activity.png" alt="">
+                    <h4 class="text-[20px] font-medium">Activity Log</h4>
+                </div>
+                <button class="text-[#FFFFFF] mt-4 py-[10px] px-5 text-[16px] font-medium bg-[#3752FD] rounded-[16px]">Clear History</button>
+            </div>
+            <hr class="border-dashed mt-4 mb-5">
+        </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 </html>
