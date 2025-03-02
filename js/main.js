@@ -19,19 +19,47 @@ for (i = 0; i < completedButton.length; i++){
         const time =`${hours}:${minute}:${seconds} ${amPm}`
         const historyContainer = document.getElementById('history-container')
         const div = document.createElement('div');
-        div.classList.add('bg-[#F4F7FF]','py-3','px-2','rounded-[8px]','mt-[28px]')
-        div.innerHTML =`
+        div.classList.add('bg-[#F4F7FF]','py-3','px-2','rounded-[8px]','mt-[28px]','h-div')
+
+        if(completeBtn.classList.contains('btn-n-one')){
+            div.innerHTML =`
         <p>You have Completed The Task Fix Mobile Button Issue At ${time}</p>
         `
+        }else if(completeBtn.classList.contains('btn-n-two')){
+            div.innerHTML =`
+        <p>You have Completed The Task Add Dark Mode At ${time}</p>
+        `
+        }else if(completeBtn.classList.contains('btn-n-three')){
+            div.innerHTML =`
+        <p>You have Completed The Task Optimize  Home page At ${time}</p>
+        `
+        }else if (completeBtn.classList.contains('btn-n-four')){
+            div.innerHTML =`
+        <p>You have Completed The Task Add new emoji 🤲 At ${time}</p>
+        `
+        }else if (completeBtn.classList.contains('btn-n-five')){
+            div.innerHTML =`
+        <p>You have Completed The Task Integrate OpenAI API At ${time}</p>
+        `
+        }else if (completeBtn.classList.contains('btn-n-six')){
+            div.innerHTML =`
+        <p>You have Completed The Task Improve Job searching At ${time}</p>
+        `
+        }
+        
         historyContainer.appendChild(div)
         completeBtn.disabled = true;
-        completeBtn.classList.add('bg-gray-300','text-gray-500')
- 
+        completeBtn.classList.add('bg-gray-300','text-gray-500')   
     })
 }
 const clearHistoryBtn=document.getElementById('clear-history-btn')
 clearHistoryBtn.addEventListener('click',function(){
-    const historyContainer = document.getElementById('history-container')
-    
-    
+    const hDiv =document.querySelectorAll('.h-div');
+    hDiv.forEach(function(div){
+        div.style.display = 'none'
+    }) 
+})
+const discoverDiv =document.getElementById('discover-div')
+discoverDiv.addEventListener('click',function(){
+    window.location.href = 'blog.html'
 })
