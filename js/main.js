@@ -1,5 +1,14 @@
-const completedButton = document.querySelectorAll('#completed-btn');
+const themBtn = document.getElementById('them-btn')
+themBtn.addEventListener('click',function(){
 
+})
+//date set
+const date = new Date()
+const curDate = date.toDateString()
+document.getElementById('set-date').innerText=curDate
+
+//6btn
+const completedButton = document.querySelectorAll('#completed-btn');
 for (i = 0; i < completedButton.length; i++){
     const completeBtn = completedButton[i]
     completeBtn.addEventListener('click',function(event){
@@ -49,6 +58,7 @@ for (i = 0; i < completedButton.length; i++){
         
         historyContainer.appendChild(div)
         completeBtn.disabled = true;
+        completeBtn.classList.remove('cursor-pointer')
         completeBtn.classList.add('bg-gray-300','text-gray-500')   
     })
 }
@@ -63,3 +73,4 @@ const discoverDiv =document.getElementById('discover-div')
 discoverDiv.addEventListener('click',function(){
     window.location.href = 'blog.html'
 })
+
