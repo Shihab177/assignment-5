@@ -14,7 +14,11 @@ const completedButton = document.querySelectorAll('#completed-btn');
 for (i = 0; i < completedButton.length; i++){
     const completeBtn = completedButton[i]
     completeBtn.addEventListener('click',function(event){
+
         alert('Board Updated Successfully')
+        if(completeBtn.classList.contains('btn-n-six')){
+            alert('congrates!!! you have completed all the current task')
+        }
         const addOrSubtract =1
         const taskNum = parseInt(document.getElementById('task-num').innerText);
         const navNum =parseInt(document.getElementById('nav-num').innerText);
@@ -61,7 +65,8 @@ for (i = 0; i < completedButton.length; i++){
         historyContainer.appendChild(div)
         completeBtn.disabled = true;
         completeBtn.classList.remove('cursor-pointer')
-        completeBtn.classList.add('bg-gray-300','text-gray-500')   
+        completeBtn.classList.add('bg-gray-300','text-gray-500')
+           
     })
 }
 const clearHistoryBtn=document.getElementById('clear-history-btn')
