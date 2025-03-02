@@ -1,12 +1,14 @@
 const themBtn = document.getElementById('them-btn')
+const colors = ['#00cec9','#e84393','#1B1464','#a55eea','#fa8231','#20bf6b','#F4F7FF']
+var index = 0
 themBtn.addEventListener('click',function(){
-
+    document.body.style.background = colors[index]
+    index = (index + 1) % colors.length
 })
 //date set
 const date = new Date()
 const curDate = date.toDateString()
 document.getElementById('set-date').innerText=curDate
-
 //6btn
 const completedButton = document.querySelectorAll('#completed-btn');
 for (i = 0; i < completedButton.length; i++){
